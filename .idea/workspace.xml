@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="152f6378-c186-4947-8747-fd21f2772fc8" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin File" />
+        <option value="Kotlin Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/test/java/BT2/AddCategories_priority.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/test/java/BT2/AddCategories_suite_xml.java" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/test/java/BT_WebelementsWebdriver/LearningWebElements.java" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="JavaAutoRunManager">
+    <enabled-run-configurations>
+      <run-configuration type="TestNG" name="AddCategory.Login (1)" />
+    </enabled-run-configurations>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2AmEkHSr5cOWwTCeJJnPRtSAWmF" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="BT_JavaOOP3.common" />
+      <recent name="BT2" />
+      <recent name="demo" />
+      <recent name="BT_JavaOOP3" />
+      <recent name="LearnTestNG" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.AddCategory">
+    <configuration name="AddCategory" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BT1.AddCategory" />
+      <module name="seleniumPractice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="BT1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AddCategories_priority" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="seleniumPractice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="BT2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="BT2" />
+      <option name="MAIN_CLASS_NAME" value="BT2.AddCategories_priority" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AddCategory" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="seleniumPractice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="BT1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="BT1" />
+      <option name="MAIN_CLASS_NAME" value="BT1.AddCategory" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AddCategory.Login (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="seleniumPractice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="BT1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="BT1" />
+      <option name="MAIN_CLASS_NAME" value="BT1.AddCategory" />
+      <option name="METHOD_NAME" value="Login" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="D:/TT/auto/seleniumPractice/src/test/resources/suites/suitBT2.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="seleniumPractice" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/suites/suitBT2.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.AddCategory" />
+      <item itemvalue="TestNG.D:/TT/auto/seleniumPractice/src/test/resources/suites/suitBT2.xml" />
+      <item itemvalue="TestNG.AddCategories_priority" />
+      <item itemvalue="TestNG.AddCategory" />
+      <item itemvalue="TestNG.AddCategory.Login (1)" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.AddCategory" />
+        <item itemvalue="TestNG.AddCategory" />
+        <item itemvalue="TestNG.D:/TT/auto/seleniumPractice/src/test/resources/suites/suitBT2.xml" />
+        <item itemvalue="TestNG.AddCategories_priority" />
+        <item itemvalue="TestNG.AddCategory.Login (1)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="152f6378-c186-4947-8747-fd21f2772fc8" name="Changes" comment="" />
+      <created>1655606505301</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1655606505301</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
