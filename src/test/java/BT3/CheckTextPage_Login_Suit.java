@@ -13,7 +13,7 @@ public class CheckTextPage_Login_Suit extends BaseTest3_textPage {
     public void TextHeading() throws InterruptedException {
 
         driver.get("https://ecommerce.anhtester.com/login");
-        Thread.sleep(15000);
+        Thread.sleep(1000);
 
         SoftAssert SA = new SoftAssert();
 

@@ -5,13 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="152f6378-c186-4947-8747-fd21f2772fc8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/BT_JavaOOP3/common/BaseTest3_textPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/BT3/CheckTextAdminPage_suitt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/BT_JavaOOP3/common/BaseTest3_TextAdminPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/BT3/CheckTextPage_Login_Suit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BT3/CheckTextPage_Login_Suit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BT3/checkTextDialog_Login_Suit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BT3/checkTextDialog_Login_Suit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/suites/suitBT3_TextDialog.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/suites/suitBT3_TextDialog.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/suites/suitBT3_Textpage.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/suites/suitBT3_Textpage.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,61 +57,91 @@
       <recent name="LearnTestNG" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.D:/TT/auto/Homework.AutomationTest/src/test/resources/suites/suitBT3_Textpage.xml">
-    <configuration name="AddCategory" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="BT1.AddCategory" />
-      <module name="seleniumPractice" />
+  <component name="RunManager" selected="TestNG.CheckTextAdminPage_suitt.TextHyperlinkDashboard">
+    <configuration name="CheckTextAdminPage_suitt.TextHeadingTop12Pro" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Homework.AutomationTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="BT1.*" />
+          <option name="PATTERN" value="BT3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="BT3" />
+      <option name="MAIN_CLASS_NAME" value="BT3.CheckTextAdminPage_suitt" />
+      <option name="METHOD_NAME" value="TextHeadingTop12Pro" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AddCategory" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="seleniumPractice" />
+    <configuration name="CheckTextAdminPage_suitt.TextHyperlinkClearCache" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Homework.AutomationTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="BT1.*" />
+          <option name="PATTERN" value="BT3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="BT1" />
-      <option name="MAIN_CLASS_NAME" value="BT1.AddCategory" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PACKAGE_NAME" value="BT3" />
+      <option name="MAIN_CLASS_NAME" value="BT3.CheckTextAdminPage_suitt" />
+      <option name="METHOD_NAME" value="TextHyperlinkClearCache" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="D:/TT/auto/Homework.AutomationTest/src/test/resources/suites/suitBT3_TextDialog.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="CheckTextAdminPage_suitt.TextHyperlinkDashboard" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Homework.AutomationTest" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/suites/suitBT3_TextDialog.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="BT3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="BT3" />
+      <option name="MAIN_CLASS_NAME" value="BT3.CheckTextAdminPage_suitt" />
+      <option name="METHOD_NAME" value="TextHyperlinkDashboard" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="D:/TT/auto/Homework.AutomationTest/src/test/resources/suites/suitBT3_Textpage.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="CheckTextAdminPage_suitt.TextSearchTextbox" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Homework.AutomationTest" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/suites/suitBT3_Textpage.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="BT3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="BT3" />
+      <option name="MAIN_CLASS_NAME" value="BT3.CheckTextAdminPage_suitt" />
+      <option name="METHOD_NAME" value="TextSearchTextbox" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="D:/TT/auto/seleniumPractice/src/test/resources/suites/suitBT2.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="seleniumPractice" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/suites/suitBT2.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
+    <configuration name="CheckTextAdminPage_suitt.TextSpanAdminName" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Homework.AutomationTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="BT3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="BT3" />
+      <option name="MAIN_CLASS_NAME" value="BT3.CheckTextAdminPage_suitt" />
+      <option name="METHOD_NAME" value="TextSpanAdminName" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -122,19 +149,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.AddCategory" />
-      <item itemvalue="TestNG.D:/TT/auto/Homework.AutomationTest/src/test/resources/suites/suitBT3_TextDialog.xml" />
-      <item itemvalue="TestNG.D:/TT/auto/Homework.AutomationTest/src/test/resources/suites/suitBT3_Textpage.xml" />
-      <item itemvalue="TestNG.D:/TT/auto/seleniumPractice/src/test/resources/suites/suitBT2.xml" />
-      <item itemvalue="TestNG.AddCategory" />
+      <item itemvalue="TestNG.CheckTextAdminPage_suitt.TextHeadingTop12Pro" />
+      <item itemvalue="TestNG.CheckTextAdminPage_suitt.TextHyperlinkClearCache" />
+      <item itemvalue="TestNG.CheckTextAdminPage_suitt.TextHyperlinkDashboard" />
+      <item itemvalue="TestNG.CheckTextAdminPage_suitt.TextSearchTextbox" />
+      <item itemvalue="TestNG.CheckTextAdminPage_suitt.TextSpanAdminName" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.D:/TT/auto/Homework.AutomationTest/src/test/resources/suites/suitBT3_Textpage.xml" />
-        <item itemvalue="TestNG.D:/TT/auto/Homework.AutomationTest/src/test/resources/suites/suitBT3_TextDialog.xml" />
-        <item itemvalue="Application.AddCategory" />
-        <item itemvalue="TestNG.AddCategory" />
-        <item itemvalue="TestNG.D:/TT/auto/seleniumPractice/src/test/resources/suites/suitBT2.xml" />
+        <item itemvalue="TestNG.CheckTextAdminPage_suitt.TextHyperlinkDashboard" />
+        <item itemvalue="TestNG.CheckTextAdminPage_suitt.TextSearchTextbox" />
+        <item itemvalue="TestNG.CheckTextAdminPage_suitt.TextHeadingTop12Pro" />
+        <item itemvalue="TestNG.CheckTextAdminPage_suitt.TextSpanAdminName" />
+        <item itemvalue="TestNG.CheckTextAdminPage_suitt.TextHyperlinkClearCache" />
       </list>
     </recent_temporary>
   </component>
@@ -159,6 +186,17 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/BT3/CheckTextAdminPage_suitt.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
