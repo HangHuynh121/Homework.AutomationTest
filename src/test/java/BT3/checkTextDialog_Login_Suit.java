@@ -1,12 +1,12 @@
 package BT3;
 
-import BT_JavaOOP3.common.BaseTest3;
+import BT_JavaOOP3.common.BaseTest3_textDialog;
 import org.openqa.selenium.By;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-public class checkTextDialog_Login_Suit extends BaseTest3 {
+public class checkTextDialog_Login_Suit extends BaseTest3_textDialog {
 
     //no input data [Email] textbox and [Password] textbox
         @Test

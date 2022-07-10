@@ -1,18 +1,19 @@
 package BT3;
 
-import BT_JavaOOP3.common.BaseTest3;
+import BT_JavaOOP3.common.BaseTest3_textDialog;
+import BT_JavaOOP3.common.BaseTest3_textPage;
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-public class CheckTextPage_Login_Suit extends BaseTest3 {
+public class CheckTextPage_Login_Suit extends BaseTest3_textPage {
 
     //Check text heading "Welcome to AT eCommerce"
     @Test
     public void TextHeading() throws InterruptedException {
 
         driver.get("https://ecommerce.anhtester.com/login");
-        Thread.sleep(1000);
+        Thread.sleep(15000);
 
         SoftAssert SA = new SoftAssert();
 

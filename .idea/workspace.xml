@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="152f6378-c186-4947-8747-fd21f2772fc8" name="Changes" comment="" />
+    <list default="true" id="152f6378-c186-4947-8747-fd21f2772fc8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/BT_JavaOOP3/common/BaseTest3_textPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BT3/CheckTextPage_Login_Suit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BT3/CheckTextPage_Login_Suit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BT3/checkTextDialog_Login_Suit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BT3/checkTextDialog_Login_Suit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/suites/suitBT3_TextDialog.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/suites/suitBT3_TextDialog.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/suites/suitBT3_Textpage.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/suites/suitBT3_Textpage.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,15 +27,14 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/test/java/BT2/AddCategories_priority.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/test/java/BT2/AddCategories_suite_xml.java" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/test/java/BT3/checkTextDialog_Login_Suit.java" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/test/java/BT_WebelementsWebdriver/LearningWebElements.java" root0="SKIP_INSPECTION" />
-  </component>
-  <component name="JavaAutoRunManager">
-    <enabled-run-configurations>
-      <run-configuration type="TestNG" name="AddCategory.Login (1)" />
-    </enabled-run-configurations>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -53,7 +60,7 @@
       <recent name="LearnTestNG" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.AddCategory">
+  <component name="RunManager" selected="TestNG.D:/TT/auto/Homework.AutomationTest/src/test/resources/suites/suitBT3_Textpage.xml">
     <configuration name="AddCategory" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="BT1.AddCategory" />
       <module name="seleniumPractice" />
@@ -63,23 +70,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AddCategories_priority" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="seleniumPractice" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="BT2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="BT2" />
-      <option name="MAIN_CLASS_NAME" value="BT2.AddCategories_priority" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -101,18 +91,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AddCategory.Login (1)" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="seleniumPractice" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="BT1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="BT1" />
-      <option name="MAIN_CLASS_NAME" value="BT1.AddCategory" />
-      <option name="METHOD_NAME" value="Login" />
-      <option name="TEST_OBJECT" value="METHOD" />
+    <configuration name="D:/TT/auto/Homework.AutomationTest/src/test/resources/suites/suitBT3_TextDialog.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Homework.AutomationTest" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/suites/suitBT3_TextDialog.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="D:/TT/auto/Homework.AutomationTest/src/test/resources/suites/suitBT3_Textpage.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Homework.AutomationTest" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/suites/suitBT3_Textpage.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
       <method v="2">
@@ -131,18 +123,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.AddCategory" />
+      <item itemvalue="TestNG.D:/TT/auto/Homework.AutomationTest/src/test/resources/suites/suitBT3_TextDialog.xml" />
+      <item itemvalue="TestNG.D:/TT/auto/Homework.AutomationTest/src/test/resources/suites/suitBT3_Textpage.xml" />
       <item itemvalue="TestNG.D:/TT/auto/seleniumPractice/src/test/resources/suites/suitBT2.xml" />
-      <item itemvalue="TestNG.AddCategories_priority" />
       <item itemvalue="TestNG.AddCategory" />
-      <item itemvalue="TestNG.AddCategory.Login (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.D:/TT/auto/Homework.AutomationTest/src/test/resources/suites/suitBT3_Textpage.xml" />
+        <item itemvalue="TestNG.D:/TT/auto/Homework.AutomationTest/src/test/resources/suites/suitBT3_TextDialog.xml" />
         <item itemvalue="Application.AddCategory" />
         <item itemvalue="TestNG.AddCategory" />
         <item itemvalue="TestNG.D:/TT/auto/seleniumPractice/src/test/resources/suites/suitBT2.xml" />
-        <item itemvalue="TestNG.AddCategories_priority" />
-        <item itemvalue="TestNG.AddCategory.Login (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -156,6 +148,17 @@
       <updated>1655606505301</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

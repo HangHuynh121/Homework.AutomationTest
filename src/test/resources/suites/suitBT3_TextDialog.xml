@@ -1,6 +1,6 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="SuitBT3" verbose="1">
+<suite name="SuitBT3_TDialog" verbose="1">
     <test name="TextDialogs">
         <classes>
             <class name="BT3.checkTextDialog_Login_Suit">

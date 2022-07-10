@@ -1,15 +1,15 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="SuitBT3" verbose="1">
+<suite name="SuitBT3_TPage" verbose="1">
     <test name="TextPage">
         <classes>
             <class name="BT3.CheckTextPage_Login_Suit">
                 <methods>
-                    <include name="" />
-                    <include name="" />
-                    <include name="" />
-                    <include name="" />
-                    <include name="" />
+                    <include name="TextHeading" />
+                    <include name="TextPara" />
+                    <include name="TextCheckbox_RememberMe" />
+                    <include name="extHyperlink_ForgotPass" />
+                    <include name="TextButton_Login" />
                 </methods>
             </class>
         </classes>
