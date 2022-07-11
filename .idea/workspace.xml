@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="152f6378-c186-4947-8747-fd21f2772fc8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/BT3/CheckTextAdminPage_suitt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/BT_JavaOOP3/common/BaseTest3_TextAdminPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BT3/CheckTextPage_Login_Suit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BT3/CheckTextPage_Login_Suit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BT3/CheckTextAdminPage_suitt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BT3/CheckTextAdminPage_suitt.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +28,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/test/java/BT2/AddCategories_priority.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/test/java/BT2/AddCategories_suite_xml.java" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/test/java/BT3/CheckTextAdminPage_suitt.java" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/test/java/BT3/checkTextDialog_Login_Suit.java" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/test/java/BT_WebelementsWebdriver/LearningWebElements.java" root0="SKIP_INSPECTION" />
   </component>
@@ -57,8 +56,8 @@
       <recent name="LearnTestNG" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.CheckTextAdminPage_suitt.TextHyperlinkDashboard">
-    <configuration name="CheckTextAdminPage_suitt.TextHeadingTop12Pro" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.CheckTextAdminPage_suitt.TextCustomerMenu">
+    <configuration name="CheckTextAdminPage_suitt.TextCustomerMenu" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Homework.AutomationTest" />
       <extension name="coverage">
         <pattern>
@@ -68,25 +67,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="BT3" />
       <option name="MAIN_CLASS_NAME" value="BT3.CheckTextAdminPage_suitt" />
-      <option name="METHOD_NAME" value="TextHeadingTop12Pro" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CheckTextAdminPage_suitt.TextHyperlinkClearCache" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Homework.AutomationTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="BT3.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="BT3" />
-      <option name="MAIN_CLASS_NAME" value="BT3.CheckTextAdminPage_suitt" />
-      <option name="METHOD_NAME" value="TextHyperlinkClearCache" />
+      <option name="METHOD_NAME" value="TextCustomerMenu" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -112,7 +93,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CheckTextAdminPage_suitt.TextSearchTextbox" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="CheckTextAdminPage_suitt.TextProductMenu (1)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Homework.AutomationTest" />
       <extension name="coverage">
         <pattern>
@@ -122,7 +103,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="BT3" />
       <option name="MAIN_CLASS_NAME" value="BT3.CheckTextAdminPage_suitt" />
-      <option name="METHOD_NAME" value="TextSearchTextbox" />
+      <option name="METHOD_NAME" value="TextProductMenu" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -130,7 +111,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CheckTextAdminPage_suitt.TextSpanAdminName" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="CheckTextAdminPage_suitt.TextProductMenu" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Homework.AutomationTest" />
       <extension name="coverage">
         <pattern>
@@ -140,7 +121,25 @@
       </extension>
       <option name="PACKAGE_NAME" value="BT3" />
       <option name="MAIN_CLASS_NAME" value="BT3.CheckTextAdminPage_suitt" />
-      <option name="METHOD_NAME" value="TextSpanAdminName" />
+      <option name="METHOD_NAME" value="TextProductMenu" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CheckTextAdminPage_suitt.TextSalesMenu" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Homework.AutomationTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="BT3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="BT3" />
+      <option name="MAIN_CLASS_NAME" value="BT3.CheckTextAdminPage_suitt" />
+      <option name="METHOD_NAME" value="TextSalesMenu" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -149,19 +148,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="TestNG.CheckTextAdminPage_suitt.TextHeadingTop12Pro" />
-      <item itemvalue="TestNG.CheckTextAdminPage_suitt.TextHyperlinkClearCache" />
+      <item itemvalue="TestNG.CheckTextAdminPage_suitt.TextCustomerMenu" />
+      <item itemvalue="TestNG.CheckTextAdminPage_suitt.TextProductMenu" />
+      <item itemvalue="TestNG.CheckTextAdminPage_suitt.TextProductMenu (1)" />
+      <item itemvalue="TestNG.CheckTextAdminPage_suitt.TextSalesMenu" />
       <item itemvalue="TestNG.CheckTextAdminPage_suitt.TextHyperlinkDashboard" />
-      <item itemvalue="TestNG.CheckTextAdminPage_suitt.TextSearchTextbox" />
-      <item itemvalue="TestNG.CheckTextAdminPage_suitt.TextSpanAdminName" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.CheckTextAdminPage_suitt.TextCustomerMenu" />
+        <item itemvalue="TestNG.CheckTextAdminPage_suitt.TextSalesMenu" />
+        <item itemvalue="TestNG.CheckTextAdminPage_suitt.TextProductMenu" />
+        <item itemvalue="TestNG.CheckTextAdminPage_suitt.TextProductMenu (1)" />
         <item itemvalue="TestNG.CheckTextAdminPage_suitt.TextHyperlinkDashboard" />
-        <item itemvalue="TestNG.CheckTextAdminPage_suitt.TextSearchTextbox" />
-        <item itemvalue="TestNG.CheckTextAdminPage_suitt.TextHeadingTop12Pro" />
-        <item itemvalue="TestNG.CheckTextAdminPage_suitt.TextSpanAdminName" />
-        <item itemvalue="TestNG.CheckTextAdminPage_suitt.TextHyperlinkClearCache" />
       </list>
     </recent_temporary>
   </component>
@@ -192,8 +191,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/BT3/CheckTextAdminPage_suitt.java</url>
-          <line>14</line>
+          <line>16</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/BT3/CheckTextAdminPage_suitt.java</url>
+          <line>372</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
