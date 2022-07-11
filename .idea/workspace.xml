@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="152f6378-c186-4947-8747-fd21f2772fc8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/resources/suites/suitBT3_TextAdminPage.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BT3/CheckTextAdminPage_suitt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BT3/CheckTextAdminPage_suitt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BT3/CheckTextAdminPage_suitt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BT3/CheckTextAdminPage_suit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/suites/suitBT3_TextDialog.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/suites/suitBT3_TextDialog_Login.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/suites/suitBT3_Textpage.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/suites/suitBT3_Textpage_Login.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +31,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/test/java/BT2/AddCategories_priority.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/test/java/BT2/AddCategories_suite_xml.java" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/test/java/BT3/CheckTextAdminPage_suitt.java" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/test/java/BT3/CheckTextAdminPage_suit.java" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/test/java/BT3/checkTextDialog_Login_Suit.java" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/test/java/BT_WebelementsWebdriver/LearningWebElements.java" root0="SKIP_INSPECTION" />
   </component>
@@ -44,7 +47,7 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -56,8 +59,8 @@
       <recent name="LearnTestNG" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.CheckTextAdminPage_suitt.TextCustomerMenu">
-    <configuration name="CheckTextAdminPage_suitt.TextCustomerMenu" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.D:/TT/auto/Homework.AutomationTest/src/test/resources/suites/suitBT3_TextAdminPage.xml">
+    <configuration name="CheckTextAdminPage_suit.TextColumName" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Homework.AutomationTest" />
       <extension name="coverage">
         <pattern>
@@ -66,8 +69,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="BT3" />
-      <option name="MAIN_CLASS_NAME" value="BT3.CheckTextAdminPage_suitt" />
-      <option name="METHOD_NAME" value="TextCustomerMenu" />
+      <option name="MAIN_CLASS_NAME" value="BT3.CheckTextAdminPage_suit" />
+      <option name="METHOD_NAME" value="TextColumName" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -75,7 +78,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CheckTextAdminPage_suitt.TextHyperlinkDashboard" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="CheckTextAdminPage_suit.TextMarketingMenu" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Homework.AutomationTest" />
       <extension name="coverage">
         <pattern>
@@ -84,8 +87,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="BT3" />
-      <option name="MAIN_CLASS_NAME" value="BT3.CheckTextAdminPage_suitt" />
-      <option name="METHOD_NAME" value="TextHyperlinkDashboard" />
+      <option name="MAIN_CLASS_NAME" value="BT3.CheckTextAdminPage_suit" />
+      <option name="METHOD_NAME" value="TextMarketingMenu" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -93,7 +96,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CheckTextAdminPage_suitt.TextProductMenu (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="CheckTextAdminPage_suit.TextSupportMenu" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Homework.AutomationTest" />
       <extension name="coverage">
         <pattern>
@@ -102,8 +105,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="BT3" />
-      <option name="MAIN_CLASS_NAME" value="BT3.CheckTextAdminPage_suitt" />
-      <option name="METHOD_NAME" value="TextProductMenu" />
+      <option name="MAIN_CLASS_NAME" value="BT3.CheckTextAdminPage_suit" />
+      <option name="METHOD_NAME" value="TextSupportMenu" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -111,36 +114,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CheckTextAdminPage_suitt.TextProductMenu" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="D:/TT/auto/Homework.AutomationTest/src/test/resources/suites/suitBT3_TextAdminPage.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Homework.AutomationTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="BT3.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="BT3" />
-      <option name="MAIN_CLASS_NAME" value="BT3.CheckTextAdminPage_suitt" />
-      <option name="METHOD_NAME" value="TextProductMenu" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/suites/suitBT3_TextAdminPage.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CheckTextAdminPage_suitt.TextSalesMenu" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="D:/TT/auto/Homework.AutomationTest/src/test/resources/suites/suitBT3_TextDialog_Login.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Homework.AutomationTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="BT3.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="BT3" />
-      <option name="MAIN_CLASS_NAME" value="BT3.CheckTextAdminPage_suitt" />
-      <option name="METHOD_NAME" value="TextSalesMenu" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/suites/suitBT3_TextDialog_Login.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
       <method v="2">
@@ -148,19 +135,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="TestNG.CheckTextAdminPage_suitt.TextCustomerMenu" />
-      <item itemvalue="TestNG.CheckTextAdminPage_suitt.TextProductMenu" />
-      <item itemvalue="TestNG.CheckTextAdminPage_suitt.TextProductMenu (1)" />
-      <item itemvalue="TestNG.CheckTextAdminPage_suitt.TextSalesMenu" />
-      <item itemvalue="TestNG.CheckTextAdminPage_suitt.TextHyperlinkDashboard" />
+      <item itemvalue="TestNG.CheckTextAdminPage_suit.TextColumName" />
+      <item itemvalue="TestNG.CheckTextAdminPage_suit.TextMarketingMenu" />
+      <item itemvalue="TestNG.CheckTextAdminPage_suit.TextSupportMenu" />
+      <item itemvalue="TestNG.D:/TT/auto/Homework.AutomationTest/src/test/resources/suites/suitBT3_TextAdminPage.xml" />
+      <item itemvalue="TestNG.D:/TT/auto/Homework.AutomationTest/src/test/resources/suites/suitBT3_TextDialog_Login.xml" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.CheckTextAdminPage_suitt.TextCustomerMenu" />
-        <item itemvalue="TestNG.CheckTextAdminPage_suitt.TextSalesMenu" />
-        <item itemvalue="TestNG.CheckTextAdminPage_suitt.TextProductMenu" />
-        <item itemvalue="TestNG.CheckTextAdminPage_suitt.TextProductMenu (1)" />
-        <item itemvalue="TestNG.CheckTextAdminPage_suitt.TextHyperlinkDashboard" />
+        <item itemvalue="TestNG.D:/TT/auto/Homework.AutomationTest/src/test/resources/suites/suitBT3_TextAdminPage.xml" />
+        <item itemvalue="TestNG.D:/TT/auto/Homework.AutomationTest/src/test/resources/suites/suitBT3_TextDialog_Login.xml" />
+        <item itemvalue="TestNG.CheckTextAdminPage_suit.TextColumName" />
+        <item itemvalue="TestNG.CheckTextAdminPage_suit.TextSupportMenu" />
+        <item itemvalue="TestNG.CheckTextAdminPage_suit.TextMarketingMenu" />
       </list>
     </recent_temporary>
   </component>
@@ -190,12 +177,12 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/BT3/CheckTextAdminPage_suitt.java</url>
+          <url>file://$PROJECT_DIR$/src/test/java/BT3/CheckTextAdminPage_suit.java</url>
           <line>16</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/BT3/CheckTextAdminPage_suitt.java</url>
+          <url>file://$PROJECT_DIR$/src/test/java/BT3/CheckTextAdminPage_suit.java</url>
           <line>372</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>

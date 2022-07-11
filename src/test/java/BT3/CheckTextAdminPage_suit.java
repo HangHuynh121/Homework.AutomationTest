@@ -1,14 +1,12 @@
 package BT3;
 
 import BT_JavaOOP3.common.BaseTest3_TextAdminPage;
-import BT_JavaOOP3.common.BaseTest3_textPage;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-public class CheckTextAdminPage_suitt extends BaseTest3_TextAdminPage {
+public class CheckTextAdminPage_suit extends BaseTest3_TextAdminPage {
 
     //Check Text hyperlink [Anh Tester]
     @Test
@@ -329,7 +327,6 @@ public class CheckTextAdminPage_suitt extends BaseTest3_TextAdminPage {
         SA.assertAll();
     }
 
-
     //Check Text Menu [Customers]
     @Test
     public void TextCustomerMenu() throws InterruptedException {
@@ -387,13 +384,346 @@ public class CheckTextAdminPage_suitt extends BaseTest3_TextAdminPage {
     }
 
     //Check Text Menu [Sellers]
+    @Test
+    public void TextSellerMenu() throws InterruptedException {
+        driver.get("https://ecommerce.anhtester.com/admin");
+        Thread.sleep(2000);
+
+        SoftAssert SA = new SoftAssert();
+
+        WebElement ClickSeller = driver.findElement(By.xpath("//a[normalize-space() = 'Sellers']"));
+        ClickSeller.click();
+        Thread.sleep(1000);
+
+        //Check text [Sellers] Menu
+        String expSell = "Sellers";
+        String actSell = driver.findElement(By.xpath("//span[normalize-space()='Sellers']")).getText();
+        System.out.println("CHECK [Sellers] MENU");
+        System.out.println("Exp: " + expSell);
+        System.out.println("Act: " + actSell);
+
+        SA.assertEquals(actSell, expSell); //Fail
+        Thread.sleep(2000);
+
+        //Check text [All Seller]
+        String expAllSell = "All Seller";
+        String actAllSell = driver.findElement(By.xpath("//span[normalize-space()='All Seller']")).getText();
+        System.out.println("1. Check Text All Seller:");
+        System.out.println("Exp: " + expAllSell);
+        System.out.println("Act: " + actAllSell);
+
+        SA.assertEquals(actAllSell, expAllSell);
+        Thread.sleep(2000);
+
+        //Check text [Payouts]
+        String expPay = "Payouts";
+        String actPay = driver.findElement(By.xpath("//span[normalize-space()='Payouts']")).getText();
+        System.out.println("2. Check Text Payouts:");
+        System.out.println("Exp: " + expPay);
+        System.out.println("Act: " + actPay);
+
+
+        SA.assertEquals(actPay, expPay); //pass
+        Thread.sleep(2000);
+
+        //Check text [Payout Requests]
+        String expPayRe = "Payout Requests";
+        String actPayRe = driver.findElement(By.xpath("//span[normalize-space()='Payout Requests']")).getText();
+        System.out.println("3. Check Text Payout Requests:");
+        System.out.println("Exp: " + expPayRe);
+        System.out.println("Act: " + actPayRe);
+
+        SA.assertEquals(actPayRe, expPayRe);//pass
+        Thread.sleep(2000);
+
+        //Check text [Seller Commission]
+        String expSellCom = "Seller Commission";
+        String actSellCom = driver.findElement(By.xpath("//span[normalize-space()='Seller Commission']")).getText();
+        System.out.println("4. Check Text Seller Commission:");
+        System.out.println("Exp: " + expSellCom);
+        System.out.println("Act: " + actSellCom);
+
+        SA.assertEquals(actSellCom, expSellCom);//pass
+        Thread.sleep(2000);
+
+
+        //Check text [Seller Verification Form]
+        String expSellForm = "Seller Verification Form";
+        String actSellForm = driver.findElement(By.xpath("//span[normalize-space()='Seller Verification Form']")).getText();
+        System.out.println("5. Check Text Seller Verification Form:");
+        System.out.println("Exp: " + expSellForm);
+        System.out.println("Act: " + actSellForm);
+
+
+        SA.assertEquals(actSellForm, expSellForm);//pass
+        Thread.sleep(2000);
+
+        SA.assertAll();
+    }
+
     //Check Text Menu [Uploaded Files]
-    //Check Text Menu [Report]
+    @Test
+    public void TextUploadedFilesMenu() throws InterruptedException {
+        driver.get("https://ecommerce.anhtester.com/admin");
+        Thread.sleep(2000);
+
+        SoftAssert SA = new SoftAssert();
+
+
+        //Check text [Uploaded Files] Menu
+        String expUp = "Uploaded Files";
+        String actUp = driver.findElement(By.xpath("//a[normalize-space() = 'Uploaded Files']")).getText();
+        System.out.println("CHECK [Uploaded Files] MENU");
+        System.out.println("Exp: " + expUp);
+        System.out.println("Act: " + actUp);
+
+        SA.assertEquals(actUp, expUp); //Fail
+        Thread.sleep(2000);
+
+        SA.assertAll();
+    }
+
+    //Check Text Menu [Reports]
+    @Test
+    public void TextReportMenu() throws InterruptedException {
+        driver.get("https://ecommerce.anhtester.com/admin");
+        Thread.sleep(2000);
+
+        SoftAssert SA = new SoftAssert();
+
+        WebElement ClickReport = driver.findElement(By.xpath("//a[normalize-space() ='Reports']"));
+        ClickReport.click();
+        Thread.sleep(1000);
+
+        //Check text [Reports] Menu
+        String expReport = "Reports";
+        String actReportr = driver.findElement(By.xpath("//span[normalize-space()='Reports']")).getText();
+        System.out.println("CHECK [Report] MENU");
+        System.out.println("Exp: " + expReport);
+        System.out.println("Act: " + actReportr);
+
+        SA.assertEquals(actReportr, expReport);
+        Thread.sleep(2000);
+
+        //Check text [In House Product Sale]
+        String expInHousePro = "In House Product Sale";
+        String actInhousePro = driver.findElement(By.xpath("//span[normalize-space()='In House Product Sale']")).getText();
+        System.out.println("1. Check Text In House Product Sales:");
+        System.out.println("Exp: " + expInHousePro);
+        System.out.println("Act: " + actInhousePro);
+
+        SA.assertEquals(actInhousePro, expInHousePro);
+        Thread.sleep(2000);
+
+        //Check text [Seller Products Sale]
+        String expSellProSale = "Seller Products Sale";
+        String actSellProSale = driver.findElement(By.xpath("//span[normalize-space()='Seller Products Sale']")).getText();
+        System.out.println("2. Check Text Seller Products Sale:");
+        System.out.println("Exp: " + expSellProSale);
+        System.out.println("Act: " + actSellProSale);
+
+        SA.assertEquals(actSellProSale, expSellProSale);
+        Thread.sleep(2000);
+
+        //Check text [Products Stock]
+        String expProStock = "Products Stock";
+        String actProStock = driver.findElement(By.xpath("//span[normalize-space()='Products Stock']")).getText();
+        System.out.println("3. Check Text Products Stock:");
+        System.out.println("Exp: " + expProStock);
+        System.out.println("Act: " + actProStock);
+
+        SA.assertEquals(actProStock, expProStock);
+        Thread.sleep(2000);
+
+        //Check text [Products wishlist]
+        String expProWi = "Products wishlist";
+        String actProWi = driver.findElement(By.xpath("//span[normalize-space()='Products wishlist']")).getText();
+        System.out.println("4. Check Text Products wishlist:");
+        System.out.println("Exp: " + expProWi);
+        System.out.println("Act: " + actProWi);
+
+        SA.assertEquals(actProWi, expProWi);
+        Thread.sleep(2000);
+
+        //Check text [User Searches]
+        String expUseSearch = "User Searches";
+        String actUserSearch = driver.findElement(By.xpath("//span[normalize-space()='User Searches']")).getText();
+        System.out.println("5. Check Text User Searches:");
+        System.out.println("Exp: " + expUseSearch);
+        System.out.println("Act: " + actUserSearch);
+
+        SA.assertEquals(actUserSearch, expUseSearch);
+        Thread.sleep(2000);
+
+        //Check text [Commission History]
+        String expCusHis = "Commission History";
+        String actCusHis = driver.findElement(By.xpath("//span[normalize-space()='Commission History']")).getText();
+        System.out.println("6. Check Text Commission History:");
+        System.out.println("Exp: " + expCusHis);
+        System.out.println("Act: " + actCusHis);
+
+        SA.assertEquals(actCusHis, expCusHis);
+        Thread.sleep(2000);
+
+        //Check text [Wallet Recharge History]
+        String expWalletHis = "Wallet Recharge History";
+        String actWalletHis = driver.findElement(By.xpath("//span[normalize-space()='Wallet Recharge History']")).getText();
+        System.out.println("7. Check Text Wallet Recharge History:");
+        System.out.println("Exp: " + expWalletHis);
+        System.out.println("Act: " + actWalletHis);
+
+        SA.assertEquals(actWalletHis, expWalletHis);
+        Thread.sleep(2000);;
+
+        SA.assertAll();
+    }
+
+
     //Check Text Menu [Blog System]
-    //Check Text Menu [Marketing
-    // //Check Text Menu [Support]]
+    @Test
+    public void TextBlogSystemMenu() throws InterruptedException {
+        driver.get("https://ecommerce.anhtester.com/admin");
+        Thread.sleep(2000);
+
+        SoftAssert SA = new SoftAssert();
+
+        WebElement ClickBlogS = driver.findElement(By.xpath("//a[normalize-space() ='Blog System']"));
+        ClickBlogS.click();
+        Thread.sleep(1000);
+
+        //Check text [Blog System] Menu
+        String expBlogS = "Blog System";
+        String actBlogS = driver.findElement(By.xpath("//span[normalize-space()='Blog System']")).getText();
+        System.out.println("CHECK [Blog System] MENU");
+        System.out.println("Exp: " + expBlogS);
+        System.out.println("Act: " + actBlogS);
+
+        SA.assertEquals(actBlogS, expBlogS);
+        Thread.sleep(2000);
+
+        //Check text [All Posts]
+        String expAllP = "All Posts";
+        String actAllP = driver.findElement(By.xpath("//span[normalize-space()='All Posts']")).getText();
+        System.out.println("1. Check Text All Postss:");
+        System.out.println("Exp: " + expAllP);
+        System.out.println("Act: " + actAllP);
+
+        SA.assertEquals(actAllP, expAllP);
+        Thread.sleep(2000);
+
+        //Check text [Categories]
+        String expCategory = "Categories";
+        String actCategory = driver.findElement(By.xpath("//span[normalize-space()='Categories']")).getText();
+        System.out.println("2. Check Text Categories:");
+        System.out.println("Exp: " + expCategory);
+        System.out.println("Act: " + actCategory);
+
+        SA.assertEquals(actCategory, expCategory);
+        Thread.sleep(2000);
+
+        SA.assertAll();
+    }
+
+    //Check Text Menu [Marketing]
+    @Test
+    public void TextMarketingMenu() throws InterruptedException {
+        driver.get("https://ecommerce.anhtester.com/admin");
+        Thread.sleep(2000);
+
+        SoftAssert SA = new SoftAssert();
+
+        WebElement ClickMar = driver.findElement(By.xpath("//a[normalize-space() = 'Marketing']"));
+        ClickMar.click();
+        Thread.sleep(1000);
+
+        //Check text [Marketing] Menu
+        String expMar = "Marketing";
+        String actMar = driver.findElement(By.xpath("//span[normalize-space()='Marketing']")).getText();
+        System.out.println("CHECK [Marketing] MENU");
+        System.out.println("Exp: " + expMar);
+        System.out.println("Act: " + actMar);
+
+        SA.assertEquals(actMar, expMar);
+        Thread.sleep(2000);
+
+        //Check text [Flash deals]
+        String expFlashDeal = "Flash deals";
+        String actFlashDeal = driver.findElement(By.xpath("//span[normalize-space()='Flash deals']")).getText();
+        System.out.println("1. Check Text Flash deals:");
+        System.out.println("Exp: " + expFlashDeal);
+        System.out.println("Act: " + actFlashDeal);
+
+        SA.assertEquals(actFlashDeal, expFlashDeal);
+        Thread.sleep(2000);
+
+        //Check text [Subscribers]
+        String expSub = "Subscribers";
+        String actSub = driver.findElement(By.xpath("//span[normalize-space()='Subscribers']")).getText();
+        System.out.println("2. Check Text Subscribers:");
+        System.out.println("Exp: " + expSub);
+        System.out.println("Act: " + actSub);
+
+        SA.assertEquals(actSub, expSub);
+        Thread.sleep(2000);
+
+        //Check text [Coupon]
+        String expCoupon = "Coupon";
+        String actCoupon = driver.findElement(By.xpath("//span[normalize-space()='Coupon']")).getText();
+        System.out.println("2. Check Text Coupon:");
+        System.out.println("Exp: " + expCoupon);
+        System.out.println("Act: " + actCoupon);
+
+        SA.assertEquals(actCoupon, expCoupon);
+        Thread.sleep(2000);
+
+        SA.assertAll();
+    }
 
 
+    //Check Text Menu [Support]
+    @Test
+    public void TextSupportMenu() throws InterruptedException {
+        driver.get("https://ecommerce.anhtester.com/admin");
+        Thread.sleep(2000);
+
+        SoftAssert SA = new SoftAssert();
+
+        WebElement ClickSupport = driver.findElement(By.xpath("//a[normalize-space() = 'Support']"));
+        ClickSupport.click();
+        Thread.sleep(1000);
+
+        //Check text [Support] Menu
+        String expSupport = "Support";
+        String actSupport = driver.findElement(By.xpath("//span[normalize-space()='Support']")).getText();
+        System.out.println("CHECK [Support] MENU");
+        System.out.println("Exp: " + expSupport);
+        System.out.println("Act: " + actSupport);
+
+        SA.assertEquals(actSupport, expSupport);
+        Thread.sleep(2000);
+
+        //Check text [Ticket]
+        String expTicket = "Ticket";
+        String actTicket = driver.findElement(By.xpath("//span[normalize-space()='Ticket']")).getText();
+        System.out.println("1. Check Text Ticket:");
+        System.out.println("Exp: " + expTicket);
+        System.out.println("Act: " + actTicket);
+
+        SA.assertEquals(actTicket, expTicket);
+        Thread.sleep(2000);
+
+        //Check text [Product Queries]
+        String expProQueries = "Product Queries";
+        String actProQueries = driver.findElement(By.xpath("//span[normalize-space()='Product Queries']")).getText();
+        System.out.println("2. Check Text Product Queries:");
+        System.out.println("Exp: " + expProQueries);
+        System.out.println("Act: " + actProQueries);
+
+        SA.assertEquals(actProQueries, expProQueries);
+        Thread.sleep(2000);
+
+        SA.assertAll();
+    }
 
 }
 
