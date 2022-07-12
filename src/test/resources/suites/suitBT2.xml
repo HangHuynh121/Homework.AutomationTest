@@ -8,8 +8,7 @@
                     <include name="Login" />
                     <include name="PRODUCTMENU" />
                     <include name="CREATENEWCATE" />
-                    <include name="checktextSA" />
-                    <include name="checkTextHA" />
+
                 </methods>
             </class>
         </classes>

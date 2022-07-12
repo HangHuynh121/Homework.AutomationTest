@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="SuitBT3_TextAddNewCategory" verbose="1">
+    <test name="TextAdCate">
+        <classes>
+            <class name="BT3.CheckTextAddCategories_suit">
+                <methods>
+                    <include name="TextNo" />
+                    <include name="TextName" />
+                    <include name="TextParentCa" />
+                    <include name="TextOrderLevel" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
