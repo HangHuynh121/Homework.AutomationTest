@@ -18,12 +18,22 @@ public class CheckTextAddCategories_suit extends AddCategories_priority {
     Filtering Attributers: Fabric
     */
 
-    //Check [#] colum
-    @Test
-    public  void TextNo() throws InterruptedException{
-
+    //SEARCH NAME VỪA ADD
+    @Test (priority =  3)
+    public void SearchAddCategory() throws InterruptedException{
         driver.get("https://ecommerce.anhtester.com/admin/categories");
         Thread.sleep(2000);
+
+        driver.findElement(By.xpath("//input[@id='search']")).sendKeys("Hanghuynh"); //input [Search] textbox
+        Thread.sleep(1000);
+
+        driver.findElement(By.xpath("//div[@class='box-inline pad-rgt pull-left']//div")).submit(); //submit [Search] textbox
+        Thread.sleep(2000);
+    }
+
+    //Check [#] colum
+    @Test(priority = 4)
+    public  void TextNo() throws InterruptedException{
 
         SoftAssert SA = new SoftAssert();
 
@@ -40,16 +50,13 @@ public class CheckTextAddCategories_suit extends AddCategories_priority {
     }
 
     //Check [Name] colum
-    @Test
+    @Test (priority = 5)
     public  void TextName() throws InterruptedException{
-
-        driver.get("https://ecommerce.anhtester.com/admin/categories");
-        Thread.sleep(2000);
 
         SoftAssert SA = new SoftAssert();
 
         String expName = "HanghuynhCategory";
-        String actName = driver.findElement(By.xpath("//tbody/tr[1]/td[1]")).getText();
+        String actName = driver.findElement(By.xpath("//tbody/tr[1]/td[2]")).getText();
         Thread.sleep(2000);
 
         System.out.println(" Check text [Name] colum");
@@ -61,11 +68,9 @@ public class CheckTextAddCategories_suit extends AddCategories_priority {
     }
 
     //Check [Parent Category] colum
-    @Test
+    @Test (priority = 6)
     public  void TextParentCa() throws InterruptedException{
 
-        driver.get("https://ecommerce.anhtester.com/admin/categories");
-        Thread.sleep(2000);
 
         SoftAssert SA = new SoftAssert();
 
@@ -82,11 +87,8 @@ public class CheckTextAddCategories_suit extends AddCategories_priority {
     }
 
     //Check [Order Level] colum
-    @Test
+    @Test (priority = 7)
     public  void TextOrderLevel() throws InterruptedException{
-
-        driver.get("https://ecommerce.anhtester.com/admin/categories");
-        Thread.sleep(2000);
 
         SoftAssert SA = new SoftAssert();
 
@@ -101,49 +103,4 @@ public class CheckTextAddCategories_suit extends AddCategories_priority {
 
         SA.assertAll();
     }
-//
-//    //Check [ Meta Title] colum
-//    @Test
-//    public  void TextParentCa(){
-//
-//        SoftAssert SA = new SoftAssert();
-//
-//        String expParentCa = "Laptop & Accessories";
-//        String actParentCa = driver.findElement(By.xpath("//tbody/tr[1]/td[3]")).getText();
-//        //Thread.sleep(4000);
-//
-//        SA.assertEquals(actParentCa,expParentCa);
-//
-//        SA.assertAll();
-//    }
-//
-//    //Check [PMeta Description] colum
-//    @Test
-//    public  void TextParentCa(){
-//
-//        SoftAssert SA = new SoftAssert();
-//
-//        String expParentCa = "Laptop & Accessories";
-//        String actParentCa = driver.findElement(By.xpath("//tbody/tr[1]/td[3]")).getText();
-//        Thread.sleep(1000);
-//
-//        SA.assertEquals(actParentCa,expParentCa);
-//
-//        SA.assertAll();
-//    }
-//
-//    //Check [Filtering Attributers] colum
-//    @Test
-//    public  void TextParentCa(){
-//
-//        SoftAssert SA = new SoftAssert();
-//
-//        String expParentCa = "Laptop & Accessories";
-//        String actParentCa = driver.findElement(By.xpath("//tbody/tr[1]/td[3]")).getText();
-//        Thread.sleep(1000);
-//
-//        SA.assertEquals(actParentCa,expParentCa);
-//
-//        SA.assertAll();
-//    }
 }

@@ -91,11 +91,11 @@ public class AddCategories_priority extends BaseTest {
         driver.findElement(By.xpath("//button[normalize-space()='Save']")).click(); //click [Save] button
         Thread.sleep(5000);
 
-        //SEARCH NAME VỪA ADD
-        driver.findElement(By.xpath("//input[@id='search']")).sendKeys("Hanghuynh"); //input [Search] textbox
-        Thread.sleep(1000);
-        driver.findElement(By.xpath("//div[@class='box-inline pad-rgt pull-left']//div")).submit(); //submit [Search] textbox
-        Thread.sleep(5000);
+//        //SEARCH NAME VỪA ADD
+//        driver.findElement(By.xpath("//input[@id='search']")).sendKeys("Hanghuynh"); //input [Search] textbox
+//        Thread.sleep(1000);
+//        driver.findElement(By.xpath("//div[@class='box-inline pad-rgt pull-left']//div")).submit(); //submit [Search] textbox
+//        Thread.sleep(5000);
 
         //CHECK TEXT CATEGORY VỪA ADD Ở CỘT NAME TẠI [CATEGORY] SCREEN
 //        WebElement nameSearch = driver.findElement(By.xpath("//td[normalize-space()='HanghuynhCategory']"));

@@ -8,6 +8,7 @@
                     <include name="Login" />
                     <include name="PRODUCT_MENU" />
                     <include name="CREATE_NEW_CATE" />
+                    <include name="SearchAddCategory" />
                     <include name="TextNo" />
                     <include name="TextName" />
                     <include name="TextParentCa" />
