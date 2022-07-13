@@ -25,7 +25,11 @@ public class AddCategories_priority extends BaseTest {
 
     //PRODUCT MENU
     @Test (priority = 1)
-    public void PRODUCTMENU() throws InterruptedException {
+    public void PRODUCT_MENU() throws InterruptedException {
+
+        driver.get("https://ecommerce.anhtester.com/admin");
+        Thread.sleep(2000);
+
         driver.findElement(By.xpath("//a[normalize-space()='Products']")).click();// click [Product] menu
         Thread.sleep(1000);
         driver.findElement(By.xpath("//a[@href='https://ecommerce.anhtester.com/admin/categories']")).click();// Click[category] menu
@@ -37,7 +41,9 @@ public class AddCategories_priority extends BaseTest {
 
     //ADD NEW CATEGORY
     @Test (priority = 2)
-    public void CREATENEWCATE() throws InterruptedException {
+    public void CREATE_NEW_CATE() throws InterruptedException {
+        driver.get("https://ecommerce.anhtester.com/admin/categories/create");
+        Thread.sleep(2000);
 
 //        SoftAssert sa = new SoftAssert();
 //        Thread.sleep(2000);
@@ -99,65 +105,65 @@ public class AddCategories_priority extends BaseTest {
 //        sa.assertAll();
     }
 
-    //CHECK TEXT CATEGORY VỪA ADD Ở CỘT NAME TẠI [CATEGORY] SCREEN BẰNG softAssert
-    @Test (priority = 3)
-    public void checktextSA() throws InterruptedException {
-
-        SoftAssert SA = new SoftAssert();
-        Thread.sleep(2000);
-
-        WebElement nameSearch = driver.findElement(By.xpath("//tbody/tr[1]/td[2]"));
-
-        String expText = "HanghuynhCategory";
-        String actText = nameSearch.getText();
-
-        System.out.println("Check Text name New Category by SA");
-//        System.out.println("ActText:" + actText);
-//        System.out.println("ExpText:" + expText);
-
-       SA.assertEquals(actText,expText); //True, run countinous click [edit] button
-       Thread.sleep(1000);
-
-//        driver.findElement(By.xpath("//a[@href='https://ecommerce.anhtester.com/admin/categories/edit/475?lang=en']")).click(); //click edit Category
-//        Thread.sleep(3000);
-
-       SA.assertTrue(actText.equals("Hanghuynh")); //fail, run countinous
-       Thread.sleep(1000);
-
-       SA.assertFalse(actText.equals("HanghuynhCategory"));//fail
-        Thread.sleep(1000);
-
-       SA.assertAll();
-
-    }
-
-    //CHECK TEXT CATEGORY VỪA ADD Ở CỘT NAME TẠI [CATEGORY] SCREEN BẰNG hardAsserts
-    @Test(priority = 4)
-    public void checkTextHA() throws InterruptedException {
-        WebElement nameSearch = driver.findElement(By.xpath("//tbody/tr[1]/td[2]"));
-
-        //TRUE
-        String expText = "HanghuynhCategory";
-        String actText = nameSearch.getText();
-
-        System.out.println("Check Text name New Category by HA");
-        Assert.assertEquals(actText,expText);
-        Thread.sleep(1000);
-
-        driver.findElement(By.xpath("//a[@href='https://ecommerce.anhtester.com/admin/categories/edit/475?lang=en']")).click();
-        Thread.sleep(3000);
-
-        //FAIL
-//        String expText = "Hanghuynh";
+//    //CHECK TEXT CATEGORY VỪA ADD Ở CỘT NAME TẠI [CATEGORY] SCREEN BẰNG softAssert
+//    @Test (priority = 3)
+//    public void checktextSA() throws InterruptedException {
+//
+//        SoftAssert SA = new SoftAssert();
+//        Thread.sleep(2000);
+//
+//        WebElement nameSearch = driver.findElement(By.xpath("//tbody/tr[1]/td[2]"));
+//
+//        String expText = "HanghuynhCategory";
 //        String actText = nameSearch.getText();
 //
 //        System.out.println("Check Text name New Category by SA");
+////        System.out.println("ActText:" + actText);
+////        System.out.println("ExpText:" + expText);
+//
+//       SA.assertEquals(actText,expText); //True, run countinous click [edit] button
+//       Thread.sleep(1000);
+//
+////        driver.findElement(By.xpath("//a[@href='https://ecommerce.anhtester.com/admin/categories/edit/475?lang=en']")).click(); //click edit Category
+////        Thread.sleep(3000);
+//
+//       SA.assertTrue(actText.equals("Hanghuynh")); //fail, run countinous
+//       Thread.sleep(1000);
+//
+//       SA.assertFalse(actText.equals("HanghuynhCategory"));//fail
+//        Thread.sleep(1000);
+//
+//       SA.assertAll();
+//
+//    }
+//
+//    //CHECK TEXT CATEGORY VỪA ADD Ở CỘT NAME TẠI [CATEGORY] SCREEN BẰNG hardAsserts
+//    @Test(priority = 4)
+//    public void checkTextHA() throws InterruptedException {
+//        WebElement nameSearch = driver.findElement(By.xpath("//tbody/tr[1]/td[2]"));
+//
+//        //TRUE
+//        String expText = "HanghuynhCategory";
+//        String actText = nameSearch.getText();
+//
+//        System.out.println("Check Text name New Category by HA");
 //        Assert.assertEquals(actText,expText);
 //        Thread.sleep(1000);
 //
 //        driver.findElement(By.xpath("//a[@href='https://ecommerce.anhtester.com/admin/categories/edit/475?lang=en']")).click();
 //        Thread.sleep(3000);
-
-    }
+//
+//        //FAIL
+////        String expText = "Hanghuynh";
+////        String actText = nameSearch.getText();
+////
+////        System.out.println("Check Text name New Category by SA");
+////        Assert.assertEquals(actText,expText);
+////        Thread.sleep(1000);
+////
+////        driver.findElement(By.xpath("//a[@href='https://ecommerce.anhtester.com/admin/categories/edit/475?lang=en']")).click();
+////        Thread.sleep(3000);
+//
+//    }
 
 }

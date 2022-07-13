@@ -5,6 +5,9 @@
         <classes>
             <class name="BT3.CheckTextAddCategories_suit">
                 <methods>
+                    <include name="Login" />
+                    <include name="PRODUCT_MENU" />
+                    <include name="CREATE_NEW_CATE" />
                     <include name="TextNo" />
                     <include name="TextName" />
                     <include name="TextParentCa" />

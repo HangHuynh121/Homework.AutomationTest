@@ -1,12 +1,13 @@
 package BT3;
 
+import BT2.AddCategories_priority;
 import BT2.AddCategories_suite_xml;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-public class CheckTextAddCategories_suit extends AddCategories_suite_xml {
+public class CheckTextAddCategories_suit extends AddCategories_priority {
     /*
     INFOR ADD NEW CATEGORY
     Name: HanghuynhCategory
