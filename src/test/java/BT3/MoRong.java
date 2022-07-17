@@ -7,15 +7,20 @@ import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
+import java.awt.*;
+import java.awt.event.KeyEvent;
+import java.awt.event.InputEvent;
+
 
 public class MoRong extends AddCategories_priority {
 
     @Test (priority =  3)
-    public void EditAddCategory() throws InterruptedException{
+    public void EditAddCategory() throws InterruptedException, AWTException{
         driver.get("https://ecommerce.anhtester.com/admin/categories");
         Thread.sleep(1000);
 
         Actions act = new Actions(driver);
+        Robot RB = new Robot();
 
         driver.findElement(By.xpath("//input[@id='search']")).sendKeys("Hanghuynh123"); //input [Search] textbox
         Thread.sleep(1000);
@@ -54,6 +59,24 @@ public class MoRong extends AddCategories_priority {
             driver.findElement(By.xpath("//input[@id='order_level']")).sendKeys("3");
             Thread.sleep(1000);
 
+        //EDIT [Banner] Browser
+            //Di chuyển trỏ đến [740,611]
+            RB.mouseMove(740, 611);
+            Thread.sleep(2000);
+            RB.mousePress(InputEvent.BUTTON1_DOWN_MASK);
+            RB.mouseRelease(InputEvent.BUTTON1_DOWN_MASK);
+            Thread.sleep(2000);
+            //Chọn Banner mới
+            RB.mouseMove(656,354);
+            RB.delay(1000);
+            RB.mousePress(InputEvent.BUTTON1_DOWN_MASK);
+            RB.mouseRelease(InputEvent.BUTTON1_DOWN_MASK);
+            Thread.sleep(2000);
+            //click [Add File] button
+            RB.mouseMove(1380,770);
+            RB.mousePress(InputEvent.BUTTON1_DOWN_MASK);
+            RB.mouseRelease(InputEvent.BUTTON1_DOWN_MASK);
+            Thread.sleep(2000);
 
         //CLICK [Save] BUTTON
             driver.findElement(By.xpath("//button[normalize-space()='Save']")).click(); //click [Save] button
