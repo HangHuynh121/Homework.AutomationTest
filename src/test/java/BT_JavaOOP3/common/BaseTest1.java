@@ -12,7 +12,6 @@ public class BaseTest1 {
 
     public static WebDriver driver;
 
-
     public static void createDriver() {
 
         WebDriverManager.chromedriver().setup();
@@ -22,7 +21,6 @@ public class BaseTest1 {
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
 
     }
-
 
     public static void  closeDriver(){
         if(driver != null){
