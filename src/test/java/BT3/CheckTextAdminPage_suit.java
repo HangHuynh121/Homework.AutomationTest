@@ -275,7 +275,7 @@ public class CheckTextAdminPage_suit extends BaseTest3_TextAdminPage {
         Thread.sleep(1000);
 
         //Check text [Sales] Menu
-        String expSale = "Sale";
+        String expSale = "Sales";
         String actSale = driver.findElement(By.xpath("//span[normalize-space()='Sales']")).getText();
         System.out.println("CHECK [Sales] MENU");
         System.out.println("Exp: " + expSale);

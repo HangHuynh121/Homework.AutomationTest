@@ -78,7 +78,7 @@ public class CheckTextAddCategories_suit extends AddCategories_priority {
         String actParentCa = driver.findElement(By.xpath("//tbody/tr[1]/td[3]")).getText();
         Thread.sleep(2000);
 
-        System.out.println(" Check text [Pảent Category] colum");
+        System.out.println(" Check text [Parent Category] colum");
         System.out.println("Exp: " + expParentCa + "/ Act: " + actParentCa);
 
         SA.assertEquals(actParentCa,expParentCa);
