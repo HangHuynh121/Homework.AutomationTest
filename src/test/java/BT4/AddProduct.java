@@ -2,6 +2,8 @@ package BT4;
 
 import BT_JavaOOP3.common.BaseTest;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
 import javax.swing.plaf.TableHeaderUI;
@@ -48,6 +50,7 @@ public class AddProduct extends BaseTest {
         Thread.sleep(1000);
 
         Robot robot = new Robot();
+        Actions act = new Actions(driver);
 
         //Input [Product Name] combobox
         driver.findElement(By.xpath("//label[contains(text(),'Product Name')]//following-sibling::div//input")).sendKeys("Hang");
@@ -155,10 +158,58 @@ public class AddProduct extends BaseTest {
         Thread.sleep(2000);
 
         driver.findElement(By.xpath("//button[normalize-space()='Add Files']")).click(); //click [Add Files] button
+        Thread.sleep(2000);
+
+        //Choose[Thumbnail Image] image
+        driver.findElement(By.xpath("//label[.='Thumbnail Image (300x300)']/following-sibling::div[1]//div[1]//div[1]")).click();
+        //open browser
+        Thread.sleep(1000);
+        driver.findElement(By.xpath("//input[@placeholder='Search your files']")).sendKeys("machong");
+        Thread.sleep(1000);
+        driver.findElement(By.xpath("//img[@src='//ecommerce.anhtester.com/public/uploads/all/fFiyZNhIwLA7vlIAQTwlMQCEpV2CKosHOsvVes1Z.jpg']")).click();
+        Thread.sleep(1000);
+        driver.findElement(By.xpath("//button[normalize-space()='Add Files']")).click(); //click [Add Files] button
+        Thread.sleep(1000);
+
+        //choose [Video Provider] combobox
+        driver.findElement(By.xpath("//div//label[normalize-space()='Video Provider']//following-sibling::div//div//button")).click();
+        Thread.sleep(1000);
+        driver.findElement(By.xpath("//div//label[normalize-space()='Video Provider']//following-sibling::div//div//select//option[1]")).click();
         Thread.sleep(5000);
+
+        //Input [Video Link] textbox
+        driver.findElement(By.xpath("//input[@placeholder='Video Link']")).sendKeys("https://www.youtube.com/watch?v=viYqkJw2jCI");
+        Thread.sleep(1000);
+
+        //checck [color] checkbox
+        robot.mouseMove(1038,650); // move mouse đến mũi tên xuống scroll
+        Thread.sleep(1000);
+        robot.mousePress(InputEvent.BUTTON1_DOWN_MASK);
+        robot.mouseRelease(InputEvent.BUTTON1_DOWN_MASK);
+        Thread.sleep(2000);
+
+        // choose [Color] combobox
+        driver.findElement(By.xpath("//body/div[@class='aiz-main-wrapper']/div[@class='aiz-content-wrapper']/div[@class='aiz-main-content']/div[@class='px-15px px-lg-25px']/div/form[@id='choice_form']/div[@class='row gutters-5']/div[@class='col-lg-8']/div[@class='card']/div[@class='card-body']/div[1]/div[2]/div[1]/button[1]")).click();
+        Thread.sleep(1000);
+
+
+        driver.findElement(By.xpath("//div[@class='dropdown-menu show']//input[@aria-label='Search']")).sendKeys("pink");
+        Thread.sleep(1000);
+        driver.findElement(By.xpath("//span[contains(text(),'HotPink')]")).click();
+        Thread.sleep(1000);
+
+
+//        driver.findElement(By.xpath("//div//label[contains(.,'Video Provider')]/following-sibling::div//button")).sendKeys("lightgreen");
+//        river.findElement(By.xpath("//span[contains(text(),'LightGreen')]")).click();
+
+//        driver.findElement(By.xpath("//div//label[contains(.,'Video Provider')]/following-sibling::div//button")).click();
+//        Thread.sleep(1000);
 
         //
 
+
+
+        Thread.sleep(15000);
 
 
 
