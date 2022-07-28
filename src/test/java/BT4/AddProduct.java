@@ -5,7 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
-
+import org.openqa.selenium.JavascriptExecutor;
 import javax.swing.plaf.TableHeaderUI;
 import java.awt.*;
 import java.awt.event.InputEvent;
@@ -51,6 +51,7 @@ public class AddProduct extends BaseTest {
 
         Robot robot = new Robot();
         Actions act = new Actions(driver);
+        JavascriptExecutor js = (JavascriptExecutor)driver;
 
         //Input [Product Name] combobox
         driver.findElement(By.xpath("//label[contains(text(),'Product Name')]//following-sibling::div//input")).sendKeys("Hang");
@@ -136,7 +137,7 @@ public class AddProduct extends BaseTest {
         robot.keyPress(KeyEvent.VK_M);
         robot.keyPress(KeyEvent.VK_A);
         robot.keyPress(KeyEvent.VK_C);
-        Thread.sleep(4000);
+        Thread.sleep(1000);
         robot.mouseMove(234,445);
         robot.mousePress(InputEvent.BUTTON1_DOWN_MASK);
         robot.mouseRelease(InputEvent.BUTTON1_DOWN_MASK);
@@ -198,18 +199,138 @@ public class AddProduct extends BaseTest {
         driver.findElement(By.xpath("//span[contains(text(),'HotPink')]")).click();
         Thread.sleep(1000);
 
+        act.keyDown(Keys.CONTROL).sendKeys("a").keyUp(Keys.CONTROL).build().perform();
+        Thread.sleep(2000);
+        robot.keyPress(KeyEvent.VK_BACK_SPACE);
+        Thread.sleep(1000);
 
-//        driver.findElement(By.xpath("//div//label[contains(.,'Video Provider')]/following-sibling::div//button")).sendKeys("lightgreen");
-//        river.findElement(By.xpath("//span[contains(text(),'LightGreen')]")).click();
-
-//        driver.findElement(By.xpath("//div//label[contains(.,'Video Provider')]/following-sibling::div//button")).click();
-//        Thread.sleep(1000);
-
-        //
+        driver.findElement(By.xpath("//div[@class='dropdown-menu show']//input[@aria-label='Search']")).sendKeys("greenyellow");
+        Thread.sleep(1000);
+        driver.findElement(By.xpath("//span[contains(text(),'GreenYellow')]")).click();
+        Thread.sleep(1000);
 
 
+        //Select [Attributes] comboboxd
+        driver.findElement(By.xpath("//button[@data-id='choice_attributes']")).click();
+        Thread.sleep(1000);
+        driver.findElement(By.xpath("//div[@class='dropdown-menu show']//input[@aria-label='Search']")).sendKeys("F");
+        Thread.sleep(1000);
+        driver.findElement(By.xpath("//span[normalize-space()='Fabric']")).click();
+        Thread.sleep(1000);
 
-        Thread.sleep(15000);
+        //Slect [Fabric] combobox
+        driver.findElement(By.xpath("//button[@title='Nothing selected']")).click();
+        Thread.sleep(1000);
+        driver.findElement(By.xpath("//a[normalize-space()='Big']")).click();
+        Thread.sleep(1000);
+
+        //input [Unit price] textbox
+        driver.findElement(By.xpath("//input[@placeholder='Unit price']")).sendKeys("100");
+        Thread.sleep(1000);
+
+        //Select [Discount Date Range]
+        driver.findElement(By.xpath("//input[@placeholder='Select Date']")).click();
+        Thread.sleep(1000);
+        act.doubleClick(driver.findElement(By.xpath("//td[@class='weekend available'][normalize-space()='24']"))).build().perform();
+        Thread.sleep(1000);
+        driver.findElement(By.xpath("//button[@class='applyBtn btn btn-sm btn-primary']")).click();
+        Thread.sleep(2000);
+
+        //Input [Discount] texbox
+        driver.findElement(By.xpath("//input[@placeholder='Discount']")).sendKeys("20");
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("//div[@class='col-md-3']//button[@title='Flat']")).click();
+        Thread.sleep(1000);
+        driver.findElement(By.xpath("//span[normalize-space()='Percent']")).click();
+        Thread.sleep(1000);
+
+
+        //input [External link] textbox
+        driver.findElement(By.xpath("//input[@placeholder='External link']")).sendKeys("https://www.youtube.com/watch?v=C46PciIHX-k&list=RDC46PciIHX-k&start_radio=1");
+        Thread.sleep(1000);
+
+        //Input [External link button text] textbox
+        driver.findElement(By.xpath("//input[@placeholder='External link button text']")).sendKeys("https://www.youtube.com/watch?v=C46PciIHX-k&list=RDC46PciIHX-k&start_radio=1");
+        Thread.sleep(2000);
+
+        //cuộn xuống [Greenyellow] item
+        js.executeScript("arguments[0].scrollIntoView(true);",driver.findElement(By.xpath("//td[@class='text-center footable-first-visible']")));
+
+        /*
+        //Input [Greenyellow]
+        Thread.sleep(1000);
+        driver.findElement(By.xpath("//input[@name='price_GreenYellow']")).sendKeys("100");
+        Thread.sleep(1000);
+
+        driver.findElement(By.xpath("//input[@name='sku_GreenYellow']")).sendKeys("200");
+        Thread.sleep(1000);
+
+        driver.findElement(By.xpath("//input[@name='qty_GreenYellow']")).sendKeys("300");
+        Thread.sleep(1000);
+
+        /*
+        driver.findElement(By.xpath("//tbody/tr[1]/td[5]/div[1]//div[normalize-space()='Choose File']")).click();
+        Thread.sleep(1000);
+        driver.findElement(By.xpath("//a[normalize-space()='Upload New']")).click();
+        Thread.sleep(1000);
+        driver.findElement(By.xpath("//button[normalize-space()='Browse']")).click();
+        Thread.sleep(2000);
+
+        robot.mouseMove(26,356); //click [D] disk
+        robot.mousePress(InputEvent.BUTTON1_DOWN_MASK);
+        robot.mouseRelease(InputEvent.BUTTON1_DOWN_MASK);
+        Thread.sleep(1000);
+
+
+        robot.mouseMove(78,138); ///click [anh] folder
+        robot.mousePress(InputEvent.BUTTON1_DOWN_MASK);
+        robot.mouseRelease(InputEvent.BUTTON1_DOWN_MASK);
+        Thread.sleep(1000);
+
+
+        robot.mouseMove(234,418); //click Search image
+        robot.mousePress(InputEvent.BUTTON1_DOWN_MASK);
+        robot.mouseRelease(InputEvent.BUTTON1_DOWN_MASK);
+        Thread.sleep(1000);
+        robot.keyPress(KeyEvent.VK_H);
+        robot.keyPress(KeyEvent.VK_O);
+        robot.keyPress(KeyEvent.VK_T);
+        robot.keyPress(KeyEvent.VK_P);
+        robot.keyPress(KeyEvent.VK_I);
+        robot.keyPress(KeyEvent.VK_N);
+        robot.keyPress(KeyEvent.VK_K);
+        Thread.sleep(1000);
+        robot.mouseMove(234,445);
+        robot.mousePress(InputEvent.BUTTON1_DOWN_MASK);
+        robot.mouseRelease(InputEvent.BUTTON1_DOWN_MASK);
+        Thread.sleep(1000);
+
+        robot.mouseMove(602,449);
+        Thread.sleep(1000);
+        robot.mousePress(InputEvent.BUTTON1_DOWN_MASK);
+        robot.mouseRelease(InputEvent.BUTTON1_DOWN_MASK);
+        Thread.sleep(1000);
+
+        driver.findElement(By.xpath("//a[normalize-space()='Select File']")).click();//Click [Select File] button
+        Thread.sleep(2000);
+
+        driver.findElement(By.xpath("//input[@placeholder='Search your files']")).sendKeys("hotpink"); //input [Search your file] textbox
+        Thread.sleep(2000);
+
+        driver.findElement(By.xpath("//div[@id='aiz-select-file']//div[1]//div[1]//div[1]//div[1]//img[1]")).click(); //click chọn image
+        Thread.sleep(2000);
+
+        driver.findElement(By.xpath("//button[normalize-space()='Add Files']")).click(); //click [Add Files] button
+        Thread.sleep(2000);
+        */
+
+
+
+
+
+
+
+        Thread.sleep(5000);
 
 
 
