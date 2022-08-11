@@ -1,7 +1,7 @@
-package LearnPOM17.test;
+package Learn17POM.test;
 
 import BT_JavaOOP3.common.BaseTest;
-import LearnPOM17.page.SignInPage;
+import Learn17POM.page.SignInPage;
 import org.testng.annotations.Test;
 
 public class SignInTest extends BaseTest {

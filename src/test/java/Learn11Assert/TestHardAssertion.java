@@ -1,4 +1,4 @@
-package LearnAssert;
+package Learn11Assert;
 
 import BT_JavaOOP3.common.BaseTest;
 import org.openqa.selenium.By;

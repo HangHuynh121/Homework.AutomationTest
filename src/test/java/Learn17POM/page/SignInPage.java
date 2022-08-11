@@ -1,4 +1,4 @@
-package LearnPOM17.page;
+package Learn17POM.page;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

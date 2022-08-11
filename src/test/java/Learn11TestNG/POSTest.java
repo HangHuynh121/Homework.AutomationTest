@@ -1,4 +1,4 @@
-package LearnTestNG;
+package Learn11TestNG;
 
 import BT_JavaOOP3.common.BaseTest;
 import org.openqa.selenium.By;

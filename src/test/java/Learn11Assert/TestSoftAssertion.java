@@ -1,8 +1,6 @@
-package LearnAssert;
+package Learn11Assert;
 
 import BT_JavaOOP3.common.BaseTest;
-import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
 
 public class TestSoftAssertion extends BaseTest {
 //    @Test(priority = 1)

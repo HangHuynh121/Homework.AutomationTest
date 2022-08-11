@@ -1,4 +1,4 @@
-package LearnHRM;
+package Learn16HRM;
 
 import BT_JavaOOP3.common.BaseTest;
 

@@ -1,9 +1,7 @@
-package LearnAssert.BT1;
+package Learn11Assert.BT1;
 
 import BT_JavaOOP3.common.BaseTest;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.testng.asserts.SoftAssert;
 import org.testng.annotations.Test;
 
 
