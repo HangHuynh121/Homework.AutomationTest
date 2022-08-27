@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suit" verbose="1">
+    <test name="Login Test">
+        <classes>
+            <class name="Learn17POM.test.LoginTest">
+                <methods>
+                    <include name="testSigninValid" />
+                    <include name="testResetPassword" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
