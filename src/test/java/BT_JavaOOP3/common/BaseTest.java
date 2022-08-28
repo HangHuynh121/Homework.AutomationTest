@@ -1,6 +1,6 @@
 package BT_JavaOOP3.common;
 
-import Learn17POM.page.LoginPage;
+
 import hanghuynh.utils.WebUI;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
@@ -15,13 +15,14 @@ public class BaseTest {
     public static WebDriver driver;
     public static WebDriverWait wait;
 
-    @BeforeMethod
+    @BeforeTest
     public static void createDriver() {
 
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.manage().window().maximize();
 
+        /*
         //Set timeout chờ đợi ngầm định 10s
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
@@ -33,9 +34,9 @@ public class BaseTest {
 
 //        WebUI UI = new WebUI();
 //        UI.LogConsole("creatDriver");
-
+*/
     }
-    @AfterMethod
+    @AfterTest
 
     public static void  closeDriver(){
 

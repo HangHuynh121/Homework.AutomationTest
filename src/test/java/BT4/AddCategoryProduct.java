@@ -2,25 +2,25 @@ package BT4;
 
 import BT_JavaOOP3.common.BaseTest;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.interactions.Actions;
-import org.testng.annotations.*;
 import org.openqa.selenium.JavascriptExecutor;
-import javax.swing.plaf.TableHeaderUI;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
+
 import java.awt.*;
 import java.awt.event.InputEvent;
 import java.awt.event.KeyEvent;
 
-public class AddProduct extends BaseTest {
+public class AddCategoryProduct extends BaseTest {
 
-    @Test (priority = 1)
+    @Test
     public void Login()  throws InterruptedException{
 
         driver.get("https://ecommerce.anhtester.com/login");
         Thread.sleep(1000);
 
-        //Login
-        //System.out.println("Login");
 
         driver.findElement(By.xpath("//input[@id='email']")).sendKeys("hanghuynh121@gmail.com"); //input email
         Thread.sleep(1000);
@@ -30,37 +30,107 @@ public class AddProduct extends BaseTest {
 
         driver.findElement(By.xpath("//button[normalize-space()='Login']")).click(); //click button login
         Thread.sleep(2000);
-
     }
 
+    
+    @Test
+    public void AddCategory() throws InterruptedException {
 
-
-    @Test (priority = 2)
-    public void ClickAdd_Product() throws InterruptedException {
-
-        driver.get("https://ecommerce.anhtester.com/admin");
-
-        //Select [Add New Product]  in [Product] submenu
-        //System.out.println("Select [Add New Product] menu");
-
-        driver.findElement(By.xpath("//a[normalize-space() ='Products']")).click(); //click [Product] submenu
+        driver.findElement(By.xpath("//a[normalize-space()='Products']")).click();// click [Product] menu
         Thread.sleep(1000);
+        driver.findElement(By.xpath("//a[@href='https://ecommerce.anhtester.com/admin/categories']")).click();// Click[category] menu
+        Thread.sleep(8000);
+
+        driver.findElement(By.xpath("//a[@href='https://ecommerce.anhtester.com/admin/categories/create']")).click(); //click [Add New Category] button
+        Thread.sleep(4000);
+
+        //ADD NEW CATEGORY
+
+//        SoftAssert sa = new SoftAssert();
+//        Thread.sleep(2000);
+
+        driver.findElement(By.xpath("//input[@id='name']")).sendKeys("laptopCategory"); //input [] textbox
+        Thread.sleep(3000);
+
+        driver.findElement(By.xpath("//div[@class='dropdown bootstrap-select select2 form-control aiz-']")).click(); //select [Parent Category] dropdown
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("//div[@class='dropdown-menu show']//input[@aria-label='Search']")).sendKeys("Laptop");// input [Search] box
+        Thread.sleep(1000);
+        driver.findElement(By.xpath("//span[normalize-space()='-- Laptop & Accessories']")).click();// click chọn "-- Laptop & Accessories" data
+        Thread.sleep(2000);
+
+        driver.findElement(By.xpath("//input[@id='order_level']")).sendKeys("5"); // input [Ordering Number] textbox
+        Thread.sleep(2000);
+
+        driver.findElement(By.xpath("//label[text()='Banner ']//following::div[1]")).click(); //click [Banner] combobox
+        Thread.sleep(3000);
+        driver.findElement(By.xpath("//div[7]//div[1]//div[1]//div[1]//img[1]")).click(); //Select image
+        Thread.sleep(1000);
+        driver.findElement(By.xpath("//button[normalize-space()='Add Files']")).click(); //click [Add Files] button
+
+        driver.findElement(By.xpath("//label[text()='Icon ']//following::div[1]")).click(); //click [icon] combobox
+        Thread.sleep(1000);
+        driver.findElement(By.xpath("//div[7]//div[1]//div[1]//div[1]//img[1]")).click(); //Select image
+        Thread.sleep(1000);
+        driver.findElement(By.xpath("//button[normalize-space()='Add Files']")).click(); //click [Add Files] button
+
+        driver.findElement(By.xpath("//input[@placeholder='Meta Title']")).sendKeys("Pink"); //input [Meta Title] textbox
+        Thread.sleep(1000);
+
+        driver.findElement(By.xpath("//textarea[@name='meta_description']")).sendKeys("Máy tính màu hồng"); //Input [Meta Description] texbox
+        Thread.sleep(1000);
+
+        driver.findElement(By.xpath("//label[normalize-space()='Filtering Attributes']//following::div[1]")).click();//click [Filtering Attribution] combobox
+        Thread.sleep(1000);
+        driver.findElement(By.xpath("//div[@class='dropdown-menu show']//input[@aria-label='Search']")).sendKeys("F");
+        Thread.sleep(1000);
+        driver.findElement(By.xpath("//a[@id='bs-select-3-1']")).click(); //select "Fabric" data
+        Thread.sleep(1000);
+
+        driver.findElement(By.xpath("//button[normalize-space()='Save']")).click(); //click [Save] button
+        Thread.sleep(2000);
+
+        //SEARCH Category  VỪA ADD
+        driver.findElement(By.xpath("//input[@id='search']")).sendKeys("laptopCategory"); //input [Search] textbox
+        Thread.sleep(1000);
+        driver.findElement(By.xpath("//div[@class='box-inline pad-rgt pull-left']//div")).submit(); //submit [Search] textbox
+        Thread.sleep(5000);
+
+        //CHECK TEXT CATEGORY VỪA ADD Ở CỘT  TẠI [CATEGORY] SCREEN
+        SoftAssert sa = new SoftAssert();
+        Thread.sleep(1000);
+        WebElement name = driver.findElement(By.xpath("//tbody/tr[1]/td[normalize-space()='1']/following-sibling::td[1]"));
+        String actText= name.getText();
+
+        String expText = "Category";
+
+        Thread.sleep(1000);
+
+        sa.assertTrue(actText.equals("laptopCategory")); //fail
+        Thread.sleep(1000);
+        sa.assertAll();
+
+        if (actText.equals(expText)) {
+            System.out.println(" Test AddCategory: Category added");
+        } else {
+            System.out.println(" Test AddCategory: Category didn't add");
+        }
+    }
+
+    @Test
+    public void AddProduct() throws InterruptedException, AWTException {
+
+        driver.get("https://ecommerce.anhtester.com/admin/products/all");
+        Thread.sleep(1000);
+
+       // Robot robot = new Robot();
+        Robot robot = new Robot();
+        Actions act = new Actions(driver);
+        JavascriptExecutor js = (JavascriptExecutor)driver;
 
         driver.findElement(By.xpath("//a[normalize-space() ='Add New Product']")).click(); //click [Add New Product]
         Thread.sleep(1000);
 
-    }
-
-    //Add New Product
-    @Test (priority = 3)
-    public void AddNewProduct() throws InterruptedException, AWTException {
-
-        driver.get("https://ecommerce.anhtester.com/admin/products/create");
-        Thread.sleep(2000);
-
-        Robot robot = new Robot();
-        Actions act = new Actions(driver);
-        JavascriptExecutor js = (JavascriptExecutor)driver;
 
         //Input [Product Name] combobox
         driver.findElement(By.xpath("//label[contains(text(),'Product Name')]//following-sibling::div//input")).sendKeys("Hang");
@@ -70,9 +140,9 @@ public class AddProduct extends BaseTest {
         driver.findElement(By.xpath("//button[@title='Computer & Accessories']")).click();
         Thread.sleep(1000);
 
-        driver.findElement(By.xpath("//div[@class='dropdown-menu show']//input[@aria-label='Search']")).sendKeys("Hang");
+        driver.findElement(By.xpath("//div[@class='dropdown-menu show']//input[@aria-label='Search']")).sendKeys("laptopCategory");
         Thread.sleep(1000);
-        driver.findElement(By.xpath("//a[@id='bs-select-1-17']")).click();
+        driver.findElement(By.xpath("//a[@id='bs-select-1-21']//span[@class='text']")).click();
 
         Thread.sleep(1000);
 
@@ -321,12 +391,36 @@ public class AddProduct extends BaseTest {
         Thread.sleep(2000);
 
         driver.findElement(By.xpath("//button[normalize-space()='Save & Unpublish']")).click(); //Click [Save & Unpublish] butoon
-        Thread.sleep(1000);
+        Thread.sleep(3000);
 
 //        driver.findElement(By.xpath("//button[normalize-space()='Save & Publish']")).click(); //Click [Save & Publish] butoon
 //        Thread.sleep(1000);
 
-        Thread.sleep(5000);
+        //SEARCH Category  VỪA ADD
+        driver.findElement(By.xpath("//input[@id='search']")).sendKeys("Hang"); //input [Search] textbox
+        Thread.sleep(1000);
+        driver.findElement(By.xpath("//div[@class='col-md-2']")).submit(); //submit [Search] textbox
+        Thread.sleep(3000);
 
+
+        //Verify Product mới add
+        SoftAssert SA = new SoftAssert();
+        Thread.sleep(1000);
+        WebElement nameProduct = driver.findElement(By.xpath("//tbody/tr[1]/td[2]/div[1]/div[2]/span[1]"));
+        String actText= nameProduct.getText();
+
+        String expText = "Hang";
+
+        Thread.sleep(1000);
+
+        SA.assertTrue(actText.equals("Hang")); //fail
+        Thread.sleep(1000);
+        SA.assertAll();
+
+        if (actText.equals(expText)) {
+            System.out.println(" Test AddProduct: Product added");
+        } else {
+            System.out.println(" Test AddProduct: Product didn't add");
+        }
     }
 }

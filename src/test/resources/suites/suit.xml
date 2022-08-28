@@ -1,12 +1,13 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="Suit" verbose="1">
-    <test name="Login Test">
+    <test name="AddProduct">
         <classes>
-            <class name="Learn17POM.test.LoginTest">
+            <class name="BT4.AddCategoryProduct">
                 <methods>
-                    <include name="testSigninValid" />
-                    <include name="testResetPassword" />
+                    <include name="Login" />
+                    <include name="AddCategory" />
+                    <include name="AddProduct" />
                 </methods>
             </class>
         </classes>

@@ -95,7 +95,7 @@ public class AddCategory extends BaseTest1 {
         Thread.sleep(2000);
 
         sa.assertTrue(actText.equals("Category")); //fail
-        Thread.sleep(3000);
+        Thread.sleep(1000);
         sa.assertAll();
 
         closeDriver();
