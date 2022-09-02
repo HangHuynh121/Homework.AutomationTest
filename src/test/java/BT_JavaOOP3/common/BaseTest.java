@@ -40,7 +40,7 @@ public class BaseTest {
 
     public static void  closeDriver(){
 
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(0)); //reset timeout
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(0)); //reset timeout ở từng menthod nếu có set
 
         try{
             Thread.sleep(2000);
